@@ -1,0 +1,47 @@
+# CataclysmNT v2
+# Vanilla player names are hidden completely. TextDisplay renders the replacement.
+
+nametag:
+  # %prefix% and %suffix% come from LuckPerms. PlaceholderAPI placeholders are also supported.
+  format: "%prefix% <gray>•</gray> %suffix%"
+
+  # %name% is intentionally replaced with an empty string so the vanilla/player name never appears.
+  # Use other PlaceholderAPI placeholders, e.g. %player_level%, if PlaceholderAPI is installed.
+
+  height: 2.35
+  scale: 0.90
+  opacity: 255
+
+  # Transparent background.
+  background:
+    enabled: false
+    color: "#00000000"
+
+  billboard: CENTER
+  alignment: CENTER
+  see-through: false
+  shadow: true
+  show-empty: false
+
+  # Automatic nametag distance. AUTO = server view-distance converted to blocks.
+  # FIXED lets you choose an exact maximum range.
+  distance:
+    mode: AUTO
+    range: 48.0
+    min-range: 16.0
+    max-range: 96.0
+
+  # Animation types: NONE, BOB, PULSE
+  animation:
+    type: BOB
+    speed: 0.08
+    amplitude: 0.05
+    opacity-amount: 45
+
+  # How often LuckPerms/PlaceholderAPI text is refreshed. Animation itself runs every tick.
+  update-interval: 20
+
+# Examples:
+# format: "<#55FFFF>%prefix%</#55FFFF> <#FFFFFF>%suffix%</#FFFFFF>"
+# format: "%luckperms_prefix% &f%player_name%"  # PlaceholderAPI example; player name is NOT recommended.
+# format: "%prefix% <#AAAAAA>|</#AAAAAA> %suffix%"

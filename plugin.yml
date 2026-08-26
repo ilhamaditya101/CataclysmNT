@@ -1,0 +1,8 @@
+name: CataclysmNT
+version: 2.0.0
+main: com.cataclysm.nt.CataclysmNT
+api-version: '1.20'
+depend: [LuckPerms]
+softdepend: [PlaceholderAPI]
+author: Cataclysm
+description: Replaces vanilla player nametags with LuckPerms prefix/suffix using TextDisplay.
